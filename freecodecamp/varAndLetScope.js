@@ -23,9 +23,4 @@ for (let i = 0; i < 5; i++) {
 console.log(printNumTwo()) // displays 3, cuz let i = 0
 
 
-
-const array = [1, 2, 3]
-
-for (let i = 0; i < array.length; i++) {
-
-}
+// var scopes globally only in blocks, segments of code. In functions it keeps local scope of a function
