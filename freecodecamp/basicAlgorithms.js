@@ -149,4 +149,14 @@ function chunkArrayInGroups(arr, size) {
    return newArr
 }
 
-console.log(chunkArrayInGroups(["a", "b", "c", "d", "e", "f"], 2));
+// console.log(chunkArrayInGroups(["a", "b", "c", "d", "e", "f"], 2));
+
+let dog = {
+   name: "Spot",
+   numLegs: 4,
+   sayLegs() { return `This dog has ${this.numLegs} legs` }
+};
+
+// console.log(dog.sayLegs());
+
+// console.log(Number('1'))
