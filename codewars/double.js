@@ -1,0 +1,1 @@
+const double = x => x.map(num => num * 2) 
