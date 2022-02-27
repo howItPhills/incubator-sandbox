@@ -43,5 +43,11 @@ const points = (games) => {
 
 const perfectSquare = sq => sq ** 0.5 % 1 ? -1 : (sq ** 0.5 + 1) ** 2
 
+// console.log(perfectSquare(16));
 
-console.log(perfectSquare(16));
+const longest = (s1, s2) => {
+   // return (s1 + s2).split('').sort().filter((item, i, arr) => arr.lastIndexOf(item) === i).join('')
+   return [...new Set(s1 + s2)].sort().join('')
+}
+
+console.log(longest("aretheyhere", "yestheyarehere"));
