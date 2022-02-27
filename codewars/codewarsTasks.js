@@ -4,4 +4,11 @@ const sortOdds = (arr) => {
    return arr.map(n => n % 2 ? odd.shift() : n)
 }
 
-console.log(sortOdds([3, 2, 5, 1, 4]));
+// console.log(sortOdds([3, 2, 5, 1, 4]));
+
+
+const digitize = (n) => {
+   return n.toString().split('').reverse().map(item => parseInt(item))
+}
+
+console.log(digitize(3214));
