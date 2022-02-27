@@ -11,4 +11,11 @@ const digitize = (n) => {
    return n.toString().split('').reverse().map(item => parseInt(item))
 }
 
-console.log(digitize(3214));
+// console.log(digitize(3214));
+
+const betterThanAverage = (classPoints, yourPoints) => {
+   const arr = classPoints.concat(yourPoints)
+   return !(Math.round(arr.reduce((acc, curr) => acc + curr) / arr.length) > yourPoints)
+}
+
+console.log(betterThanAverage([2, 3, 4], 1));
