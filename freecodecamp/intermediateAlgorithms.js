@@ -30,13 +30,18 @@ function destroyer(arr, ...args) {
 
 
 function whatIsInAName(collection, source) {
-   // const arr = [];
-   // Only change code below this line
 
-   return collection.find(item => item['last'] === source['last'])
+   const keys = Object.keys(source)
 
-   // Only change code above this line
-   // return arr;
+   return collection.filter(item => keys.every(key => source[key] === item[key]))
+
 }
 
-console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }));
+// console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }));
+
+
+
+function spinalCase(str) {
+   return str.split(/[ _-]/).replace('-')
+}
+console.log(spinalCase("AllThe-small Things"));
