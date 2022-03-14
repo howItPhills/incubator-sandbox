@@ -84,4 +84,45 @@ function wrap(value) {
    };
 }
 
-console.log(wrap("my_wrapped_string"));
+// console.log(wrap("my_wrapped_string"));
+
+function encode(string) {
+   return string.split('').map(l => {
+      switch (l) {
+         case 'a':
+            return l = 1
+         case 'e':
+            return l = 2
+         case 'i':
+            return l = 3
+         case 'o':
+            return l = 4
+         case 'u':
+            return l = 5
+      }
+      return l
+   })
+      .join('')
+}
+
+function decode(string) {
+   return string.split('').map(l => {
+      switch (l) {
+         case '1':
+            return l = 'a'
+         case '2':
+            return l = 'e'
+         case '3':
+            return l = 'i'
+         case '4':
+            return l = 'o'
+         case '5':
+            return l = 'u'
+      }
+      return l
+   })
+      .join('')
+}
+
+console.log(encode('Hello'));
+console.log(decode('h2ll4'));
