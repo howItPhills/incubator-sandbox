@@ -53,8 +53,35 @@ const longest = (s1, s2) => {
 // console.log(longest("aretheyhere", "yestheyarehere"));
 
 function removeChar(str) {
-   return str.substring(1, str.length - 1)
+   // return str.substring(1, str.length - 1)
+   return str.slice(1, -1)
 };
 
-console.log(removeChar('longest'));
+// console.log(removeChar('longest'));
 
+const uniqueInOrder = (iterable) => {
+   return Array.from(iterable).filter((l, i, arr) => arr.lastIndexOf(l))
+}
+
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+
+
+var isSquare = function (n) {
+   return n >= 0 ? !(Math.sqrt(n) % 1) : false;
+}
+
+// console.log(isSquare(0));
+
+function center(strng, width, fill = ' ') {
+   strng.split(' ')
+}
+
+// console.log(center('aa', 4, '_'))
+
+function wrap(value) {
+   return {
+      value: value
+   };
+}
+
+console.log(wrap("my_wrapped_string"));
