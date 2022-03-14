@@ -124,5 +124,21 @@ function decode(string) {
       .join('')
 }
 
-console.log(encode('Hello'));
-console.log(decode('h2ll4'));
+// console.log(encode('Hello'));
+// console.log(decode('h2ll4'));
+
+function explode(x) {
+   let arr = []
+   let score
+   if (x.some(item => typeof item === 'number')) {
+      score = x.filter(item => typeof item === 'number').reduce((acc, curr) => acc + curr)
+      for (let i = 0; arr.length < score; i++) {
+         arr.push(x)
+      }
+      return arr
+   } else {
+      return 'Void!'
+   }
+}
+
+console.log(explode(['a', 'b', 3]));
