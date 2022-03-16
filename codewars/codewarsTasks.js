@@ -163,4 +163,10 @@ function lovefunc(flower1, flower2) {
    return !!((flower1 - flower2) % 2)
 }
 
-console.log(lovefunc(3, 1));
+// console.log(lovefunc(3, 1));
+
+function pillars(num_pill, dist, width) {
+   return num_pill >= 2 ? (num_pill - 2) * width + (dist * 100 * (num_pill - 1)) : 0
+}
+
+console.log(pillars(9, 20, 20));
