@@ -141,4 +141,20 @@ function explode(x) {
    }
 }
 
-console.log(explode(['a', 'b', 3]));
+// console.log(explode(['a', 'b', 3]));
+
+
+function powersOfTwo(n) {
+   const arr = []
+   // let i = 1;
+   // do {
+   //    arr.push(i)
+   //    i *= 2
+   // } while (arr.length - 1 < n)
+   for (let i = 0; i <= n; i++) {
+      arr.push(Math.pow(2, i))
+   }
+   return arr
+}
+
+console.log(powersOfTwo(3));
