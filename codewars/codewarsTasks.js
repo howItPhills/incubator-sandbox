@@ -169,4 +169,11 @@ function pillars(num_pill, dist, width) {
    return num_pill >= 2 ? (num_pill - 2) * width + (dist * 100 * (num_pill - 1)) : 0
 }
 
-console.log(pillars(9, 20, 20));
+// console.log(pillars(9, 20, 20));
+
+
+function oddCount(n) {
+   return Math.floor(n / 2)
+}
+
+console.log(oddCount(15033));
