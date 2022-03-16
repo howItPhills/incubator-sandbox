@@ -175,5 +175,10 @@ function pillars(num_pill, dist, width) {
 function oddCount(n) {
    return Math.floor(n / 2)
 }
+// console.log(oddCount(15033));
 
-console.log(oddCount(15033));
+function usdcny(usd) {
+   return `${(usd * 6.75).toFixed(2)} Chinese Yuan`
+}
+
+console.log(usdcny(35));
