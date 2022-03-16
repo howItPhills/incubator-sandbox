@@ -157,4 +157,10 @@ function powersOfTwo(n) {
    return arr
 }
 
-console.log(powersOfTwo(3));
+// console.log(powersOfTwo(3));
+
+function lovefunc(flower1, flower2) {
+   return !!((flower1 - flower2) % 2)
+}
+
+console.log(lovefunc(3, 1));
